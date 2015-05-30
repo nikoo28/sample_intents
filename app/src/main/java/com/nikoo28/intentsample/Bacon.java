@@ -11,20 +11,20 @@ import android.widget.TextView;
 
 public class Bacon extends ActionBarActivity {
 
-    private static TextView mEditText;
+    private static TextView mTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bacon);
 
-        mEditText = (TextView) findViewById(R.id.baconText);
+        mTextView = (TextView) findViewById(R.id.baconTextView);
         Bundle appleData = getIntent().getExtras();
         if (appleData == null)
-            mEditText.setText("I got Nothing");
+            mTextView.setText("I got Nothing");
         else {
             String appleMessage = appleData.getString("appleMessage");
-            mEditText.setText(appleMessage);
+            mTextView.setText(appleMessage);
         }
 
     }
