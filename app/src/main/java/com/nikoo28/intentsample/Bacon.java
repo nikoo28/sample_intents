@@ -8,23 +8,23 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class Apples extends ActionBarActivity {
+public class Bacon extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_apples);
+        setContentView(R.layout.activity_bacon);
     }
 
-    public void startBacon(View view){
-        Intent mIntent = new Intent(this, Bacon.class);
+    public void startApple(View view){
+        Intent mIntent = new Intent(this, Apples.class);
         startActivity(mIntent);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_apples, menu);
+        getMenuInflater().inflate(R.menu.menu_bacon, menu);
         return true;
     }
 
