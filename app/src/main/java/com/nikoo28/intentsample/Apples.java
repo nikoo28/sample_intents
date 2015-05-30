@@ -6,9 +6,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 
 public class Apples extends ActionBarActivity {
+
+    private static EditText mEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +21,11 @@ public class Apples extends ActionBarActivity {
 
     public void startBacon(View view){
         Intent mIntent = new Intent(this, Bacon.class);
+
+        mEditText = (EditText)findViewById(R.id.appleEditText);
+        String userMessage = mEditText.getText().toString();
+        mIntent.putExtra("appleMessage", userMessage);
+
         startActivity(mIntent);
     }
 

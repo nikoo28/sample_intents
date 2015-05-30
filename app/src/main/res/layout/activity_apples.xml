@@ -27,4 +27,12 @@
         android:layout_centerVertical="true"
         android:onClick="startBacon"
         android:text="@string/goto_bacon"/>
+
+    <EditText
+        android:id="@+id/appleEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/baconButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"/>
 </RelativeLayout>
