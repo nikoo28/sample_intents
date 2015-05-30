@@ -3,4 +3,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="apples">Apples</string>
+    <string name="goto_bacon">Go to Bacon</string>
 </resources>
